@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CRUD - Contactos</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a id="top"></a>
+  <div class="container">
+    <header class="card header-card">
+      <div>
+        <h1>Contactos</h1>
+        <p class="lead">CRUD simple (localStorage) — edición inline</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="Glosario.html">Glosario</a></li>
+          <li><a href="biografia_AlainPineda.html">Biografía</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h2>Gestión de Contactos</h2>
+
+      <section class="controls">
+        <form id="contact-form">
+          <input type="hidden" id="contact-id">
+          <div style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+            <input id="name" placeholder="Nombre" required>
+            <input id="email" placeholder="Email">
+            <input id="phone" placeholder="Teléfono">
+            <input id="note" placeholder="Nota">
+            <button type="submit" class="btn">Agregar</button>
+            <button type="button" id="clear-btn" class="btn" style="background:transparent;border:1px dashed #f3d3e0;color:var(--muted);">Limpiar</button>
+          </div>
+        </form>
+
+        <div style="margin-top:1rem;display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap;">
+          <input id="search" placeholder="Buscar por nombre o email" style="flex:1;min-width:180px">
+          <select id="sort">
+            <option value="name_asc">Nombre ↑</option>
+            <option value="name_desc">Nombre ↓</option>
+          </select>
+          <button id="export-btn" class="btn">Exportar JSON</button>
+          <label class="btn" style="display:inline-flex;align-items:center;gap:0.4rem;cursor:pointer;">
+            Importar
+            <input id="import-file" type="file" accept="application/json" style="display:none">
+          </label>
+        </div>
+      </section>
+
+      <section style="margin-top:1rem">
+        <table id="contacts-table" style="width:100%;border-collapse:collapse">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Email</th>
+              <th>Teléfono</th>
+              <th>Nota</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <p class="top-link"><a href="#top">Regresar al inicio</a></p>
+    </main>
+  </div>
+
+  <script src="js/crud.js"></script>
+</body>
+</html>
