@@ -1,1 +1,68 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Glosario - HTML y CSS</title>
 
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <a id="top"></a>
+
+  <div class="container">
+    <header class="card header-card">
+      <div>
+        <h1>Glosario</h1>
+        <p class="lead">Términos básicos de HTML y CSS</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="biografia_AlainPineda.html">Biografía</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="card">
+      <h2>Glosario de términos HTML y CSS</h2>
+
+      <div class="glossary">
+        <dl>
+          <dt>Selector</dt>
+          <dd>En CSS, un selector se usa para elegir qué parte del HTML será afectada por los estilos. Por ejemplo, el selector <code>p</code> cambia todos los párrafos, mientras que <code>#titulo</code> cambia un elemento con un ID específico.</dd>
+
+          <dt>Atributo</dt>
+          <dd>Los atributos dan información adicional a una etiqueta HTML. Por ejemplo, <code>&lt;img src="imagen.jpg" alt="foto"&gt;</code> tiene los atributos <code>src</code> (la ruta de la imagen) y <code>alt</code> (el texto alternativo).</dd>
+
+          <dt>ID</dt>
+          <dd>El atributo <code>id</code> identifica un elemento único en una página. Sirve para crear enlaces internos o aplicar estilos específicos, por ejemplo: <code>&lt;h1 id="titulo"&gt;Mi título&lt;/h1&gt;</code>.</dd>
+
+          <dt>Clase (class)</dt>
+          <dd>Una <code>class</code> agrupa varios elementos para darles el mismo estilo. Por ejemplo, <code>&lt;p class="importante"&gt;...&lt;/p&gt;</code> permite aplicar un mismo formato a varios párrafos.</dd>
+
+          <dt>Etiqueta</dt>
+          <dd>Una etiqueta es la base del HTML. Define el tipo de contenido, como un párrafo (<code>&lt;p&gt;</code>), una imagen (<code>&lt;img&gt;</code>), o un enlace (<code>&lt;a&gt;</code>).</dd>
+
+          <dt>Padding</dt>
+          <dd>En CSS, el <strong>padding</strong> es el espacio interno entre el contenido y el borde de un elemento. Por ejemplo, si un cuadro tiene texto, el padding separa el texto del borde del cuadro. Se controla con propiedades como <code>padding</code>, <code>padding-top</code>, etc.</dd>
+
+          <dt>Alt</dt>
+          <dd>El atributo <code>alt</code> describe el contenido de una imagen. Es útil cuando la imagen no carga o para accesibilidad; por ejemplo: <code>&lt;img src="foto.jpg" alt="Retrato de persona"&gt;</code>.</dd>
+
+          <dt>Href</dt>
+          <dd>El atributo <code>href</code> se usa en los enlaces (<code>&lt;a&gt;</code>) para indicar la dirección a la que se va a dirigir el usuario: <code>&lt;a href="https://ejemplo.com"&gt;Ir a ejemplo&lt;/a&gt;</code>.</dd>
+        </dl>
+      </div>
+
+      <p class="top-link"><a href="#top">Regresar al inicio</a></p>
+    </main>
+  </div>
+
+  <!-- JS separado (smooth scroll para enlaces internos) -->
+  <script src="js/main.js"></script>
+</body>
+</html>
