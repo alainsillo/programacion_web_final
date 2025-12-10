@@ -45,6 +45,10 @@ nav a{display:inline-block;padding:0.5rem 0.75rem;border-radius:999px;text-decor
 main{padding:1.25rem}
 h2{color:#b33b79;margin-top:0}
 .glossary{line-height:1.6}
+.bio{line-height:1.6}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:0.75rem}
+ul.hobbies{padding-left:1rem}
+#profile-photo{width:110px;height:110px;border-radius:50%;object-fit:cover;border:6px solid var(--accent-2);box-shadow:0 6px 18px rgba(255,154,194,0.16)}
 
 /* Definiciones */
 .glossary dl{margin:0;padding:0}
@@ -60,6 +64,18 @@ table.info th{width:40%;color:var(--muted);font-weight:600}
 /* Link de regresar */
 .top-link{margin-top:1.25rem}
 .top-link a{color:var(--muted);text-decoration:none;border:1px dashed #f3d3e0;padding:0.45rem 0.6rem;border-radius:8px;background:transparent}
+
+/* Index cards */
+.link-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.link-card{border:1px dashed #f7d6e5}
+.link-card a{display:block;text-decoration:none;color:var(--text)}
+.link-card h3{margin:0 0 0.35rem;font-size:1.05rem;color:#b33b79}
+.link-card p{margin:0;color:var(--muted);line-height:1.4}
+
+/* Galería */
+.gallery-grid{display:flex;justify-content:center;flex-wrap:wrap;gap:20px;margin-top:20px}
+.gallery-grid img{width:200px;height:200px;object-fit:cover;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.1);transition:transform 0.3s ease, box-shadow 0.3s ease}
+.gallery-grid img:hover{transform:scale(1.07);box-shadow:0 6px 12px rgba(0,0,0,0.2)}
 
 /* Responsive */
 @media (max-width:880px){
